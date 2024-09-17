@@ -1,3 +1,23 @@
+## v0.36.1
+
+- Fix: Remove default 25 scan limit when querying for leases
+
+## v0.36.0
+
+- change aws-nuke to directly use opensource version
+
+## v0.35.3
+
+- upgrade the aws nuke version from  v2.0.2 to v2.0.3
+
+## v0.35.2
+
+- upgrade the aws nuke version from  v2.0. 1 to v2.0.2
+
+## v0.35.1
+
+- Fix: Terraform formatting
+
 ## v0.35.0
 
 - Add: Added blanket * allow permission in place of specific allow permissions for easier integration with future AWS products github.com/Optum/dce (#467)
@@ -25,7 +45,8 @@
 - Upgrade to Go version 1.17
 - Upgrade Ubuntu version on Azure DevOps Agent
 - Fix Go dependency errors in pipeline
-- Require at least `0.12.31` or later `0.12.x` versions of Terraform to recieve new provider updates
+- Require at least `1.3.x` or later versions of Terraform to recieve new provider updates
+- Output `codebuild_reset_role_name` so you can add a policy to it to grant access to `reset_nuke_template_bucket`.
 
 ## v0.33.8
 
